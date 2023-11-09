@@ -17,7 +17,6 @@ First, create a `FileUploader` object:
 var uploader = FileUploader();
 ```
 
-
 Then, use the `pickFile` method to pick a file:
 
 ```dart
@@ -38,7 +37,6 @@ onError: () {
 );
 ```
 
-
 ## Dependencies
 
 This plugin depends on the following plugins:
@@ -49,4 +47,4 @@ This plugin depends on the following plugins:
 
 ## License
 
-[MIT](./LICENE)
+[MIT](./LICENSE)
