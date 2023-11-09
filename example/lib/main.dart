@@ -21,7 +21,9 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  final uploader = FileUploader();
+  final uploader = FileUploader(
+    chunkSize: 50 * 1024 * 1024, // 指定分块大小，默认 1024*1024
+  );
 
   MyHomePage({super.key});
 
@@ -37,15 +39,16 @@ class MyHomePage extends StatelessWidget {
           onPressed: () async {
             var file = await uploader.pickFile();
             await file.upload(
-              url: 'http://127.0.0.1/upload',
-              onSuccess: () {
+              url: 'http://192.168.31.239:8001/upload/',
+              onSuccess: (chunkNumber) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Upload successful!')),
+                  SnackBar(
+                      content: Text('Chunk $chunkNumber upload successful!')),
                 );
               },
-              onError: () {
+              onError: (chunkNumber) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Upload failed.')),
+                  SnackBar(content: Text('Chunk $chunkNumber upload failed.')),
                 );
               },
             );
