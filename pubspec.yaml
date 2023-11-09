@@ -1,7 +1,17 @@
 name: slivers_uploader
 description: A file upload tool, which can be used for slicing large files.
 
-version: 0.0.3
+version: 0.0.4
+
+repository: https://github.com/jacklee1995/Slivers-Uploader
+homepage: https://github.com/jacklee1995/Slivers-Uploader
+auth:
+  name: Jcak Lee
+  email: 291148484@163.com
+  home: http://thispage.tech
+
+licence: MIT
+
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
