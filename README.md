@@ -9,6 +9,14 @@ A file upload tool for Flutter, which can be used for slicing large files.
 - Upload chunks using HTTP multipart requests.
 - Handle upload success and failure.
 
+
+## Install
+
+```shell
+flutter pub add slivers_uploader
+```
+
+
 ## Usage
 
 First, create a `FileUploader` object:
