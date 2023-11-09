@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:slivers_uploader/file_uploader.dart';
+import 'package:slivers_uploader/slivers_uploader.dart';
 
 void main() {
   runApp(const MyApp());

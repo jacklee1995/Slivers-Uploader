@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/material.dart';
-import 'package:slivers_uploader/file_uploader.dart';
+import 'package:slivers_uploader/src/file_uploader.dart';
 
 void main() {
   testWidgets('FileUploader widget test', (WidgetTester tester) async {
